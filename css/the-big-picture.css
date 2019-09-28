@@ -1,0 +1,53 @@
+/*!
+ * Start Bootstrap - The Big Picture (https://startbootstrap.com/template-overviews/the-big-picture)
+ * Copyright 2013-2019 Start Bootstrap
+ * Licensed under MIT (https://github.com/BlackrockDigital/startbootstrap-the-big-picture/blob/master/LICENSE)
+ */
+body {
+/*  background: url('http://placehold.it/1920x1080') no-repeat center center fixed;*/
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  background-size: cover;
+  -o-background-size: cover;
+background-color: black;
+}
+#home{
+	height: 100vh;
+	width:100vw;
+    background-image: url("background.jpg");
+    background-color: black;
+    background-size: cover;
+    background-position: center;
+    color: white;
+}
+#skills{
+    height: 100vh;
+    width:100vw;
+}
+#portfolio{
+    height: 100vh;
+    width:100vw;
+    display: flex;
+    overflow-y: auto;
+    overflow-x: hidden;
+    background-color: #0798EC;
+    background-image: url(hexagon-light.jpg)
+}
+#portfolio h1{
+    font-weight: 1200;
+/*    color: white;*/
+    left: -6vw;
+}
+#contact{
+    height: 100vh;
+    width:100vw;
+}
+.card-item{
+    list-style-type: none;
+    display: inline-flex;
+    margin-left: 1vw;
+}
+.card-list{
+    width: 100%;
+    margin-left: -10vw;
+}

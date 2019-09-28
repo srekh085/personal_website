@@ -1,0 +1,429 @@
+/*!
+ * Start Bootstrap - The Big Picture (https://startbootstrap.com/template-overviews/the-big-picture)
+ * Copyright 2013-2019 Start Bootstrap
+ * Licensed under MIT (https://github.com/BlackrockDigital/startbootstrap-the-big-picture/blob/master/LICENSE)
+ */
+html {
+    scroll-behavior: smooth;
+}
+body{
+}
+
+#home {
+    background-image: url("background.jpg");
+    background-color: black;
+    background-size: cover;
+    background-position: center;
+    color: white;
+    height: 100vh;
+    display: flex;
+}
+
+#home .selfie{
+    max-width: 100%;
+    max-height: 40vh;
+}
+#home .img-box{
+    padding: 0;
+    margin-top: 10%;
+}
+/* #home .container .img-box{
+    background-image: url(selfie2.png);
+    height: 30vh;
+    max-width: 100%;
+    background-size: cover;
+    background-position: center;
+    box-shadow: 0 0 20% black;
+    display: block;
+    margin: 0 auto;
+} */
+
+.heading {
+    font-size: 2rem;
+    text-align: center;
+}
+
+.content {
+    text-align: center;
+}
+
+.about-me {
+    height: 75%;
+    align-items: center;
+    filter: brightness(1);
+    margin: 0 auto;
+}
+
+.about-me .content-box {
+    background-color: rgba(0, 0, 0, 0.7);
+}
+.about-me .img-contain{
+    background-image: url("selfie.png");
+    background-size: cover;
+    background-position: top;
+    height: 10rem;
+    width: 10rem;
+    border-radius: 50%;
+}
+#portfolio{
+    display: flex;
+    overflow-y: auto;
+    overflow-x: hidden;
+    background-color: #0798EC;
+    /* background-image: url(hexagon-light.jpg); */
+    background-color: #0798EC;
+    padding-top: 1%;
+    padding-bottom: 3%;
+    min-height: 100vh;
+}
+#portfolio .heading{
+    padding-bottom: 1%;
+    font-weight: 600;
+    font-size: 3rem;
+    color: white;
+}
+.grid-skills {
+    list-style-type: none;
+    padding: 0;
+    display: grid;
+    grid-template-columns: auto;
+    grid-row-gap: 2rem;
+}
+
+.grid-skills .card-item .card {
+    min-height: 110vh;
+    height: auto;
+}
+
+.card-body a {
+    position: absolute;
+    left: 10%;
+    right: 10%;
+    bottom: 5%;
+}
+
+#skills{
+    padding: 0;
+    min-height: 100vh;
+    background-color: #FEC401;
+}
+#skills .heading{
+    font-weight: 600;
+    font-size: 3rem;
+    margin: 1%;
+    color: black;
+}
+#skills .smoll #mycarousel1{
+    max-height: inherit;
+}
+#skills .smoll{
+    display: block;
+    height: auto;
+    width: auto;
+    margin: 0 auto;
+    padding: 0;
+}
+#mycarousel1, #mycarousel2{
+    height: inherit;
+    width: inherit;
+}
+.carousel-inner img{
+    height: inherit;
+    width: inherit;
+}
+
+#contact{
+    min-height: 100vh;
+    padding: 0;
+    padding-top: 1%;
+    /* background-color: #29419D; */
+    background-color: rgb(255, 57, 57);
+}
+#contact .heading{
+    padding-bottom: 1%;
+    font-weight: 600;
+    font-size: 3rem;
+    color: white; 
+}
+#contact .formbox{
+    margin: 1%;
+}
+#contact .formbox form{
+    width: inherit;
+}
+#contact .linkbox{
+    text-align: center;
+    margin: 1%;
+    margin-bottom: 6%;
+}
+#contact .linkbox .linkedin-logo{
+    height: inherit;
+    width: 100px;
+}
+#contact .linkbox .github-logo{
+    height: inherit;
+    width: 130px;
+}
+#contact .linkbox .noimg{
+    color: black;
+    font-weight: 600;
+    font-size: 1 rem;
+}
+#contact .linkbox .card .card-header{
+    font-weight: 700;
+    font-size: 1 rem;
+}
+
+@media screen and (min-width: 0px){
+    #skills .bigboi{
+        display: none;
+    }
+    .grid-skills .card-item .card {
+        min-height: 85vh;
+    }
+    #home .about-me{
+        height: 90%;
+    }
+    #skills{
+        padding-bottom: 10%;
+    }
+    #contact .linkbox{
+        margin-bottom: 20%;
+    }
+}
+
+@media screen and (min-width: 370px){
+    #skills .bigboi{
+        display: none;
+    }
+    .grid-skills .card-item .card {
+        min-height: 70vh;
+    }
+}
+
+@media screen and (min-width: 450px) {
+    .grid-skills .card-item .card {
+        min-height: 60vh;
+    }
+    #skills .bigboi{
+        display: none;
+    }
+    #skills .smoll{
+        padding: 10% 5% 10% 5%;
+    }
+}
+
+@media screen and (min-width: 568px){
+    #home .about-me{
+        height: 95%
+    }
+    #home .about-me .img-box{
+        margin-top: 2%;
+    }
+    .grid-skills .card-item .card {
+        min-height: 115vh;
+    }
+}
+
+@media screen and (min-width: 576px) {
+    .content {
+        width: 80%;
+        margin: 0 auto;
+    }
+    .grid-skills .card-item .card {
+        min-height: 70vh;
+    }
+    #skills .bigboi{
+        display: none;
+    }
+    #skills .smoll{
+        padding: 10% 7% 10% 7%;
+    }
+}
+/* S9/S9+/Samsung in landscape*/
+@media screen and (min-width: 740px) and (min-height: 360px) {
+    .grid-skills .card-item .card {
+        min-height: 100vh;
+    }
+}
+@media screen and (min-width: 768px) {
+    .about-me{
+        width: 75%;
+    }
+    .grid-skills .card-item .card {
+        min-height: 80vh;
+    }
+
+    .grid-skills {
+        grid-template-columns: auto auto;
+        grid-column-gap: 2rem;
+        width: 80%;
+        margin: 0 auto;
+    }
+    #skills .bigboi{
+        display: none;
+    }
+    #skills .smoll{
+        padding: 13%;
+        margin: 0 auto;
+    }
+}
+
+@media screen and (min-width: 800px) {
+    .about-me{
+        width: 75%;
+    }
+    .grid-skills .card-item .card {
+        min-height: 125vh;
+    }
+
+    .grid-skills {
+        grid-template-columns: auto auto;
+        grid-column-gap: 2rem;
+        width: 80%;
+        margin: 0 auto;
+    }
+    #skills .bigboi{
+        display: none;
+    }
+    #skills .smoll{
+
+    }
+}
+@media screen and (min-width: 820px) {
+    .about-me{
+        width: 75%;
+    }
+    .grid-skills .card-item .card {
+        min-height: 115vh;
+    }
+
+    .grid-skills {
+        grid-template-columns: auto auto;
+        grid-column-gap: 2rem;
+        width: 80%;
+        margin: 0 auto;
+    }
+    #skills .bigboi{
+        display: none;
+    }
+    #skills .smoll{
+
+    }
+}
+
+@media screen and (min-width: 992px) {
+    .content, .content-box {
+        width: 60%;
+    }
+    #skills .smoll{
+        display: none;
+    }
+    #skills .bigboi{
+        display: flex;
+    }
+    .grid-skills .card-item .card {
+        min-height: 70vh;
+    }
+}
+/* Ipad
+@media screen and (min-width: 768px) and (min-height: 1024px) {
+    .about-me{
+        width: 75%;
+    }
+    .grid-skills .card-item .card {
+        min-height: 50vh;
+    }
+
+    .grid-skills {
+        grid-template-columns: auto auto;
+        grid-column-gap: 2rem;
+        width: 80%;
+        margin: 0 auto;
+    }
+    #skills .bigboi{
+        display: none;
+    }
+    #skills .smoll{
+        padding: 13%;
+        margin: 0 auto;
+    }
+} */
+/* Ipad Pro
+@media screen and (min-width: 1024px) and (min-height: 1366px) {
+    .about-me{
+        width: 75%;
+    }
+    .grid-skills .card-item .card {
+        min-height: 40vh;
+    }
+
+    .grid-skills {
+        grid-template-columns: auto auto;
+        grid-column-gap: 2rem;
+        width: 80%;
+        margin: 0 auto;
+    }
+    #skills .bigboi{
+        display: none;
+    }
+    #skills{
+        padding-top: 2%;
+    }
+    #skills .smoll{
+        display: flex;
+        padding: 10%;
+        margin: 0 auto;
+    }
+} */
+@media screen and (min-width: 1200px) {
+    .grid-skills .card-item .card {
+        min-height: 75vh;
+    }
+    .grid-skills {
+        grid-column-gap: 3rem;
+        width: 75%;
+    }
+    #skills .smoll{
+        display: none;
+    }
+    #skills .bigboi{
+        display: flex;
+    }
+}
+
+@media screen and (min-width: 1350px) {
+    .grid-skills .card-item .card {
+        min-height: 80vh;
+    }
+    .grid-skills {
+        width: 90%;
+        grid-template-columns: auto auto auto auto;
+        grid-column-gap: 2rem;
+    }
+    #skills .smoll{
+        display: none;
+    }
+    #skills .bigboi{
+        display: flex;
+    }
+}
+@media screen and (min-width: 1800px) {
+    .grid-skills .card-item .card {
+        min-height: 50vh;
+    }
+    .grid-skills {
+        width: 90%;
+        grid-template-columns: auto auto auto auto;
+        grid-column-gap: 2rem;
+    }
+    #skills .smoll{
+        display: none;
+    }
+    #skills .container{
+        max-width: 1420px;
+    }
+    #skills .bigboi{
+        display: flex;
+    }
+}

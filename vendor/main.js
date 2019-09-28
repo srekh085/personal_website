@@ -1,6 +1,6 @@
 console.log('it works')
 $(document).ready(function(){
-    $('.submit').click(function(event){
+    $('#submitbtn').click(function(event){
         console.log('clicked button')
         
         var email=$('#exampleFormControlInput2').val()
